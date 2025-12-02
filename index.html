@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tax AI & Tax Forensics Hub</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="config.js"></script>    
+    <script src="https://atf-korea.github.io/taxforensics/config.js"></script>    
     <script type="importmap">
       {
         "imports": {
@@ -252,7 +252,7 @@
                     
                     // Column F (Index 5) for visibility
                     // '1' means visible, anything else is hidden
-                    const visibilityRaw = row[6];
+                    const visibilityRaw = row[11];
                     const isVisible = String(visibilityRaw).trim() === '1';
 
                     const IconComponent = ICON_MAP[iconName] || ICON_MAP['AIIcon'];
@@ -576,3 +576,4 @@
     </script>
   </body>
 </html>
+
